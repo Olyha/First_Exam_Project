@@ -1,0 +1,135 @@
+header {
+  position: relative;
+}
+.header__contain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.header__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+.header__form {
+  width: 500px;
+  height: 50px;
+  background: #FFFFFF;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+  color: #999999;
+  border: 3px solid #FFFFFF;
+  border-top: 4.5px solid #FFFFFF;
+}
+.header__form:hover {
+  background-color: rgb(252, 240, 201);
+}
+.header__logo {
+  width: 100%;
+  height: auto;
+  background: #5474FD;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__form {
+    width: 350px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 2.2px;
+  }
+  form {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 769px) {
+
+}
+@media screen and (max-width: 768px) {
+  .header__form {
+    width: 300px;
+    height: 26px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2.0px;
+  }
+  form {
+    padding-bottom: 25px;
+    padding-top: 15px;
+  }
+}
+@media screen and (min-width: 581px) {
+
+}
+@media screen and (max-width: 580px) {
+  .header__form {
+    width: 250px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2.0px;
+  }
+  form {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+}
+@media screen and (min-width: 481px) {
+
+}
+@media screen and (max-width: 480px) {
+  .header__form {
+    width: 190px;
+    height: 21px;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1.0px;
+  }
+  form {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 376px) {
+
+}
+@media screen and (max-width: 375px) {
+  .header__form {
+    width: 200px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.3px;
+    border: 1px solid #FFFFFF;
+    border-top: 1.5px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 321px) {
+
+}
+@media screen and (max-width: 320px) {
+
+}
