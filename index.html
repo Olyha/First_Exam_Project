@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="https://icons.getbootstrap.com/">
 </head>
 <body>
-    <header >
-        <div class="header__contain">
-         <div class="header__page">
-                <h2>Safe Travel Anywhere</h2>
+    <header class="header" >
+        <div class="contain position_center">
+            <div class="header__page position_center">
+                <h1 class="title__header title__sans">BHROMAON</h1>
+                <h2 class="title__sans header__txt">Safe Travel Anywhere</h2>
                 <div>
                   <form>
-                    <input class="header__form" type="text" placeholder="Search Your Travel Destination">
-                    <button class="header__btn-search" type="submit">SEARCH
+                    <input class="header__form title__sans" type="text" placeholder="Search Your Travel Destination">
+                    <button class="btn__search" type="submit">SEARCH
                     <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg></i>
@@ -32,42 +33,53 @@
                   </form>
                 </div>
                 <div>
-                  <a class="header__btn-scroll" href="#"><p>Scroll Down</p>
+                  <a class="text title__sans btn__scroll" href="#"><p>Scroll Down</p>
                     <i class="header__icon-chevron"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                     </svg></i>
                   </a>
                 </div>
-         </div>
+            </div>
         </div>
            <img class="banner" src="images/headerbek.jpg" alt="#">
         <div class="header__logo">
-            <div class="header__logo-nav">
-               <h1>Bhromaon</h1>
-              <nav>
-                <a class="header__nav" href="#">Who We Are</a>
-                <a class="header__nav" href="#">What We Do</a>
-                <a class="header__nav" href="#">Travel With Us</a>
-                <a class="header__nav" href="#">Contact Us</a>
-              </nav> 
+            <div class="header_nav__logo">
+               <nav>
+                 <a  href="#"><h1 class="title__sans title__nav_txt">Bhromaon</h1></a>
+               </nav>
+               <nav>
+                 <a class="header_nav" href="#">Who We Are</a>
+                 <a class="header_nav" href="#">What We Do</a>
+                 <a class="header_nav" href="#">Travel With Us</a>
+                 <a class="header_nav" href="#">Contact Us</a>
+              </nav>
+              <div class="menu__hamburger">
+                 <div class="hamburger__box" id="jsMenuMobile">
+                    <span class="hamburger__inner">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                         </svg>
+                    </span>
+                 </div>
+              </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="section__main-info">
-            <div class="block__info">
-                <div class="info_txt">
-                    <div class="block__info-text" >
-                        <h2 class="block__info-title" >Why Choose Us</h2>
+        <section class="main-info">
+            <div class="contain main-info__block_info  position_center">
+                <div class="main-info__text">
+                    <div class="main-info__paragraphs text title__sans">
+                        <h2 class="main-info__title title__aleo" >Why Choose Us</h2>
                         <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blined by desire, that they cannot foresee</p>
                         <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-                        <a class="btn" href="#">EXPLORE PLACES</a>
+                        <a class="btn position_center" href="#">EXPLORE PLACES</a>
                     </div>
                 </div>
-                <div class="block__info-imgs" >
-                   <img class="img_home" src="images/Image-home.png" alt="#">
-                   <img class="img_scale" src="images/Image-scale.png" alt="#">
+                <div class="main-info__imgs" >
+                   <img class="img_properties" src="images/Image-home.png" alt="#">
+                   <img class="img_properties main-info__img_scale" src="images/Image-scale.png" alt="#">
                 </div>
             </div>
             <div class="">
@@ -75,80 +87,75 @@
             </div>
         </section>
 
-        <section class="section__block-map">
-                <div class="line-block"><img class="line" src="images/icons/Shape 1.png" alt="#"></div>
-
-                <div class="section__map_icons-block" >
-                    <div class="map-icon">
+        <section class="map">
+            <div class="map__block position_center">
+                <div><img class="img_properties line" src="images/icons/Shape 1.png" alt="#"></div>
+                <div class="map__icons-block" >
+                    <div class="map__icon title__aleo">
                         <i><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#5474FD" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg></i>
                         <p>Search Places</p>
                     </div>
-                    <div class="map-icon">
+                    <div class="map__icon title__aleo">
                         <i><svg xmlns="http://www.w3.org/2000/svg" width="62" height="63" fill="#FF6363" class="bi bi-check-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                         </svg></i>
                         <p>Select Places</p>
                     </div>
-                    <div class="map-icon">
+                    <div class="map__icon title__aleo">
                         <i><svg xmlns="http://www.w3.org/2000/svg" width="64" height="61" fill="#00A2FF" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
                             <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
                         </svg></i>
                         <p>Book & Enjoy</p>
                     </div>
                 </div>
-
+            </div>
         </section>
 
-        <section class="section_proposal">
-            <div class="section_block-proposal">
-                <div class="block__text_hotel">
-                    <div class="block__proposal-list">
+        <section class="proposal">
+            <div class="contain position_center">
+                <div class="proposal__block hotel">
+                    <div class="proposal__info text title__sans">
                         <p>Spain </p>
-                        <h3>Grand Spain Madrid</h3>
+                        <h3 class="section__subtitle title__sans">Grand Spain Madrid</h3>
                         <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                        <a class="btn" href="#">BOOK NOW</a>
+                        <a class="btn position_center" href="#">BOOK NOW</a>
                     </div>
                 </div>
             </div>
             <img class="banner" src="images/hotelback.jpg" alt="#">
         </section>
              
-        <section class="section_proposal">
-            <div class="section_block-proposal">
-                <div class="block__text_island">
-                    <div class="block__proposal-list">
+        <section class="proposal">
+            <div class="contain position_center">
+                <div class="proposal__block island">
+                    <div class="proposal__info text title__sans">
                         <p>Spain </p>
-                        <h3>Grand Spain Madrid</h3>
+                        <h3 class="section__subtitle title__sans">Grand Spain Madrid</h3>
                         <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                        <a class="btn" href="#">BOOK NOW</a>
+                        <a class="btn position_center" href="#">BOOK NOW</a>
                     </div>
                 </div>
-
             </div>
-            <img class="banner" src="images/islandback.jpg" alt="#">
+            <img class="banner banner__island" src="images/islandback.jpg" alt="#">
         </section>
 
-        <section class="section__rewiew">
-
-            <div class="section__rewiew-contain">
-                <h2 class="title-rewiew">What Our Tourist Say</h2>
-
-                <div class="block-rewiew">
-                    <div class="block_img-rewiew">
-                    <img class="img_rewiew" src="images/rewiew.jpg" alt="#">
-                </div>
-                  <div class="txt-rewiew">
-                    <h5>Sam Sumon</h5>
-                    <p><i class="section__rewiew_icon-quote"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#5474FD" class="bi bi-quote" viewBox="0 0 16 16">
-                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-                    </svg></i>
-                    But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how
-                    all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete
-                    account of the system was account  born and I account will give you a nai the complete account of the system</p>
-                  </div>
+        <section class="rewiew">
+            <div class="contain position_center">
+                <h2 class="rewiew__title title__aleo">What Our Tourist Say</h2>
+                <div class="rewiew__block">
+                    <div class="rewiew__block_img"><img class="img_properties" src="images/rewiew.jpg" alt="#"></div>
+                    <div class="rewiew__txt text title__sans">
+                        <h5 class="section__subtitle title__sans">Sam Sumon</h5>
+                        <p><i class="section__rewiew_icon-quote"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#5474FD" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                        </svg></i>
+                        But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how
+                        all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete
+                        account of the system was account  born and I account will give you a nai the complete account of the system</p>
+                    </div>
                </div>
             </div>
             <div class="">
@@ -157,28 +164,34 @@
         </section>
 
     </main>
-    <footer>
-        <div class="footer__info">
-        <h1>BHROMAON</h1>
+    <footer class="footer position_center">
+        <div>
+        <h1 class="title__nav_txt title__sans">BHROMAON</h1>
         <p class="footer__txt" >Safe Travel Anywhere</p>
         <div class="footer__icons" >
-            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
               </svg></i></a>
-            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
               </svg></i></a>
-            <a class="footer__icons-in" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <a class="footer__icons-in" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
               </svg></i></a>
-            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                 <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
               </svg></i></a>
-            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+            <a class="footer__icons-social" href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
               </svg></i></a>
         </div>
         </div>
     </footer>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

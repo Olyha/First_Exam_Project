@@ -1,54 +1,36 @@
-footer {
-  max-width: 1770px;
+.footer {
   width: 100%;
   height: 270px;
   background-color: #232323;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer__txt {
-  font-family: 'Josefin Sans';
-  font-style: italic;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 1.6px;
-  color: #FFFFFF;
-  margin-left: -10px;
-}
-
-@media screen and (min-width: 581px) {
-
-}
-@media screen and (max-width: 580px) {
-  footer {
+  margin-top: -6px;
+  color: $main_color;
+  @media screen and (max-width: $ml) {
     height: 220px;
   }
-
-}
-@media screen and (min-width: 481px) {
-
-}
-@media screen and (max-width: 480px) {
-
-}
-@media screen and (min-width: 376px) {
-
-}
-@media screen and (max-width: 375px) {
-  footer {
-    height: 200px;
+  &__txt {
+    font-family: $font_main-text;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    margin-left: -10px;
   }
-}
-@media screen and (min-width: 321px) {
-
-}
-@media screen and (max-width: 320px) {
-
+  &__icons {
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  }
+  &__icons-social {
+    color: $text_color;
+    &:hover {
+      color: $links-btn_color;
+    }
+  }
+  &__icons-in {
+    color: $links-btn_color;
+  }
 }

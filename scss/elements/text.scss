@@ -1,0 +1,61 @@
+
+.text {
+  font-size: 16px;
+  color: $text_color;
+}
+.title {
+  &__aleo {
+    font-family: $font_some-titles;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 26px;
+    @media screen and (max-width: $st) {
+      font-size: 28px;
+      line-height: 20px;
+    }
+  }
+  &__sans {
+    font-family: $font_main-text;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+  }
+  &__nav_txt {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3.36px;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 4.8px;
+    @media screen and (max-width: $ms) {
+      font-size: 38px;
+      letter-spacing: 2.8px;
+    }
+  }
+}
+
+.section__subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  @media screen and (max-width: $ml) {
+    font-size: 16px;
+  }
+}
+
+.header__txt {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 6.82px;
+  margin-top: -13px;
+  @media screen and (max-width: $ms) {
+    letter-spacing: 4.12px;
+  }
+}
+h3 {
+  color: $main_color;
+}
+
+

@@ -1,8 +1,10 @@
+@import "normalize";
+@import "elements/variables";
+@import "blocks/general";
 @import "blocks/header";
 @import "blocks/sections";
 @import "blocks/footer";
-@import "general";
-@import "reset";
 @import "elements/links";
 @import "elements/icons";
 @import "elements/buttons";
+@import "elements/text";
